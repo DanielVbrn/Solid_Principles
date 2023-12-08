@@ -1,0 +1,20 @@
+@startuml Vehicle
+
+class Vehicle {
+  +StartEngine()
+  +Accelerate()
+}
+
+class Car {
+  +StartEngine()
+  +Accelerate()
+}
+
+class Bicycle {
+  +Accelerate()
+}
+
+Vehicle <|-- Car
+Vehicle <|-- Bicycle
+
+@enduml
